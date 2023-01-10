@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom variable</title>
+    <style>
+        :root{
+            --primary-color: rgb(229, 174, 91);
+            --secondary-color: green;
+            --red-border: 2px solid red;
+        }
+
+        #h-1{
+            color: var(--primary-color);
+        }
+        #h-2{
+            color: var(--secondary-color);
+        }
+        #h-3{
+            color: var(--primary-color);
+        }
+        #h-4{
+            color: var(--secondary-color);
+        }
+        p{
+            border: 2px solid var(--secondary-color);
+        }
+        h4{
+            border: var(--red-border);
+        }
+    </style>
+</head>
+<body>
+    <h3 id="h-1">my strong heading</h3>
+    <h3 id="h-2">my strong heading</h3>
+    <h3 id="h-3">my strong heading</h3>
+    <h3 id="h-4">my strong heading</h3>
+    <p>Lorem, ipsum.</p>
+    <div>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+    </div>
+</body>
+</html>

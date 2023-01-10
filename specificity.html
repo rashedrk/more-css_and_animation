@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        .h-3{
+            color: blue;
+        }
+        #h-3{
+            color: red;
+        }
+        h1{
+            color: aqua !important;
+            color: rgb(116, 65, 4);
+        }
+        h1{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>heading-1</h1>
+    <h1>heading-2</h1>
+    <h1 style="color: blueviolet;" class="h-3" id="h-3">heading-3</h1>
+    <h1>heading-4</h1>
+</body>
+</html>
